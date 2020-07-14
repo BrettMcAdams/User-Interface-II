@@ -1,1 +1,204 @@
-/* Add CSS styling here */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    /* border: 1px solid black; */
+    text-decoration: none;
+}
+/* Header Styling */
+
+header {
+    height:10vh;
+    padding: 4vh 5.5vw;
+    background: #6495ED;
+    color: white;
+    border: 3px solid black;
+}
+h1 {
+    font-size: 300%;
+    padding: 1vh 0vw;
+}
+
+header nav {
+    height: 40%;
+    width:10%;
+    display:flex;
+    /* flex-direction: row; */
+    justify-content: flex-start;
+}
+
+header nav a {
+    background-color:#708090;  
+    padding: 1vh 1vw;  
+    color: white;
+    border: 1px solid black;
+}
+
+/* First section styling */
+
+.firstSection {
+    /* height: 10vh; */
+    /* display: flex;
+    flex-wrap: nowrap; */
+    background-color: coral;
+    border: 3px solid black;
+    margin: 0 auto;
+}
+
+.container {
+    width:100%;
+    display: flex;
+}
+
+.cat {
+    height: 350px;
+    padding: 10% 15%;
+}
+
+.info {
+    text-align: center;
+    padding: 10%;
+}
+
+h2 {
+    font-size: 200%;
+    padding: 5%;
+    color: white;
+}
+
+.info p {
+    padding: 5%;
+    color: white;
+}
+
+button {
+    background-color:#DDA0DD;
+    height: 50px;
+    width: 120px;
+    color:white;
+    outline:none;
+}
+
+/* second section styling */
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.secondSection {
+    background-color: coral;
+    border: 3px solid black;
+}
+
+.secondSection img {
+    height: 200px;
+    width: 200px;
+    padding: 20px 0;
+}
+
+.secondSection p {
+    /* padding-left: 50px; */
+    text-align: center;
+}
+
+/* footer section styling */
+
+footer {
+    height:7vh; 
+    background-color: aqua;   
+    text-align: center;
+    padding: 7vh 0;
+    margin: auto;
+    border: 3px solid black;
+}
+
+footer p {
+    font-size: 250%;
+    color: azure;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+footer button {
+
+}
+
+@media (max-width: 800px) {
+    /* header {
+        display: flex;
+    }
+    header nav a{
+        justify-content: space-evenly;
+    } */
+    .container {
+        flex-direction: column;
+    }
+    .cat {
+        height: 250px;
+        text-align: center;
+    }
+    .info {
+        padding: 1%;
+    }
+    .top div {
+        width: 50%;
+        text-align: center;
+    }
+    .bottom div {
+        width: 50%;
+        text-align: center;
+    }
+    .top, .bottom {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .cat {
+        margin: 0 auto;
+        
+    }
+    header {
+        position: relative;
+        height: auto;
+    }
+    header h1 {
+        text-align: center;
+    }
+    header nav{
+        flex-direction: column;
+        margin: 0 auto;
+        position: relative;
+        right:70px;
+    }
+    header nav a {
+        width: 400%;
+        text-align: center;
+    }
+
+}
