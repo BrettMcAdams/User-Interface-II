@@ -17,7 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
-    /* border: 1px solid grey; */
+    /* border: 1px solid black; */
     text-decoration: none;
 }
 /* Header Styling */
@@ -31,7 +31,7 @@ header {
 }
 h1 {
     font-size: 300%;
-    padding: 1vh 0vm;
+    padding: 1vh 0vw;
 }
 
 header nav {
@@ -57,6 +57,7 @@ header nav a {
     flex-wrap: nowrap; */
     background-color: coral;
     border: 3px solid black;
+    margin: 0 auto;
 }
 
 .container {
@@ -96,6 +97,7 @@ button {
 /* second section styling */
 
 .top {
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
@@ -140,5 +142,63 @@ footer p {
 }
 
 footer button {
+
+}
+
+@media (max-width: 800px) {
+    /* header {
+        display: flex;
+    }
+    header nav a{
+        justify-content: space-evenly;
+    } */
+    .container {
+        flex-direction: column;
+    }
+    .cat {
+        height: 250px;
+        text-align: center;
+    }
+    .info {
+        padding: 1%;
+    }
+    .top div {
+        width: 50%;
+        text-align: center;
+    }
+    .bottom div {
+        width: 50%;
+        text-align: center;
+    }
+    .top, .bottom {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .cat {
+        margin: 0 auto;
+        
+    }
+    header {
+        position: relative;
+        height: auto;
+    }
+    header h1 {
+        text-align: center;
+    }
+    header nav{
+        flex-direction: column;
+        margin: 0 auto;
+        position: relative;
+        right:70px;
+    }
+    header nav a {
+        width: 400%;
+        text-align: center;
+    }
 
 }
